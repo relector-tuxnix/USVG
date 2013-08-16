@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg id="canvas" width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style type="text/css">
+
+	#slider {
+		stroke: black;
+		stroke-width: 16;
+		stroke-linecap: round;
+	}
+
+	#slider_s {
+		stroke: black;
+		stroke-width: 16;
+		stroke-linecap: round;
+		opacity: 0.2;
+	}
+
+	#slider:hover {
+		cursor:move;
+	}
+
+</style>
+
+<g transform="translate(200,200),scale(1)">
+	<line id="slider_s" x1="0" y1="0" x2="0" y2="-90"/>
+	<line id="slider" x1="0" y1="0" x2="0" y2="-14"/>
+</g>
+
+<script><![CDATA[
+
+var element = document.getElementById("slider");
+
+element.addEventListener("mousedown", leftmousedown, false);
+
+
+function leftmousedown(evt)
+{
+	pos = element.y2.baseVal.value - evt.clientY;
+	document.addEventListener("mousemove", leftmousemove, true);
+	document.addEventListener("mouseup", leftmouseup, true);
+}
+
+function leftmouseup(evt)
+{
+	console.log("Fired mouse up!");
+	
+	document.removeEventListener("mousemove", leftmousemove, true);
+	document.removeEventListener("mouseup", leftmouseup, true);
+}
+	
+function leftmousemove(evt)
+{
+	var val = evt.clientY + pos;
+	
+	changeVal(-val);
+}
+
+function changeVal(value)
+{
+	value = -value;
+	
+	var sr = element.ownerSVGElement.suspendRedraw(1000);
+
+	var maxY = document.getElementById('slider_s').y2.baseVal.value;
+	var minY = document.getElementById('slider_s').y1.baseVal.value - 1;
+
+	if (value <= maxY) { 
+		value = maxY; 
+	} else if (value >= minY) { 
+		value = minY; 
+	}
+
+	element.y2.baseVal.value = value;
+	
+	element.ownerSVGElement.unsuspendRedraw(sr);
+}
+
+]]></script>
+
+</svg>

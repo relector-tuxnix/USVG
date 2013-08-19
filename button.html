@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>USVG - Button</title>
+</head>
+
+<body>
+	<object id="button" name="button" data="button.svg" type="image/svg+xml"></object>
+
+	<script>
+		window.onload = function() {
+			button.setText("Disable me!");
+
+			button.mousedownCallback = function() {
+				button.disable();	
+			}
+		};
+	</script>
+	
+	
+</body>
+</html>

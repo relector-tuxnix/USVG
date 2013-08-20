@@ -1,9 +1,59 @@
-<?xml version="1.0"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<svg id="canvas" width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-<style type="text/css">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="canvas"
+   width="400"
+   height="400"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="slider.svg"
+   onload="init()">
+  <script
+     xlink:href="slider.js"
+     id="script3130" />
+  <metadata
+     id="metadata3324">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3322" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview3320"
+     showgrid="false"
+     inkscape:zoom="0.59"
+     inkscape:cx="200"
+     inkscape:cy="403.38983"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="canvas" />
+  <style
+     type="text/css"
+     id="style3312">
 
 	#slider {
 		stroke: black;
@@ -23,61 +73,22 @@
 	}
 
 </style>
-
-<g transform="translate(200,200),scale(1)">
-	<line id="slider_s" x1="0" y1="0" x2="0" y2="-90"/>
-	<line id="slider" x1="0" y1="0" x2="0" y2="-14"/>
-</g>
-
-<script><![CDATA[
-
-var element = document.getElementById("slider");
-
-element.addEventListener("mousedown", leftmousedown, false);
-
-
-function leftmousedown(evt)
-{
-	pos = element.y2.baseVal.value - evt.clientY;
-	document.addEventListener("mousemove", leftmousemove, true);
-	document.addEventListener("mouseup", leftmouseup, true);
-}
-
-function leftmouseup(evt)
-{
-	console.log("Fired mouse up!");
-	
-	document.removeEventListener("mousemove", leftmousemove, true);
-	document.removeEventListener("mouseup", leftmouseup, true);
-}
-	
-function leftmousemove(evt)
-{
-	var val = evt.clientY + pos;
-	
-	changeVal(-val);
-}
-
-function changeVal(value)
-{
-	value = -value;
-	
-	var sr = element.ownerSVGElement.suspendRedraw(1000);
-
-	var maxY = document.getElementById('slider_s').y2.baseVal.value;
-	var minY = document.getElementById('slider_s').y1.baseVal.value - 1;
-
-	if (value <= maxY) { 
-		value = maxY; 
-	} else if (value >= minY) { 
-		value = minY; 
-	}
-
-	element.y2.baseVal.value = value;
-	
-	element.ownerSVGElement.unsuspendRedraw(sr);
-}
-
-]]></script>
-
+  <g
+     transform="translate(30.508475,116.94915)"
+     id="g3314">
+    <line
+       id="slider_s"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="-90"
+       style="opacity:0.2;stroke:#000000;stroke-width:16;stroke-linecap:round" />
+    <line
+       id="slider"
+       x1="0"
+       y1="0"
+       x2="0"
+       y2="-14"
+       style="stroke:#000000;stroke-width:16;stroke-linecap:round" />
+  </g>
 </svg>

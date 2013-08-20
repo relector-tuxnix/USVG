@@ -16,7 +16,11 @@
    version="1.1"
    inkscape:version="0.48.4 r9939"
    viewBox="0 0 130 25"
-   sodipodi:docname="button.svg">
+   sodipodi:docname="button.svg"
+   onload="init()">
+  <script
+     xlink:href="button.js"
+     id="script3120" />
   <defs
      id="defs3266">
     <linearGradient
@@ -583,9 +587,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="4"
      inkscape:cx="31.968037"
-     inkscape:cy="95.600395"
+     inkscape:cy="93.225395"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="canvas"
      showgrid="true"
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
@@ -692,79 +696,4 @@
          y="47.899628"
          style="font-size:12.48999596px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;text-anchor:middle;font-family:Arial;-inkscape-font-specification:Arial">Button</tspan></text>
   </g>
-  <script
-     id="script141">
-var state = &quot;enabled&quot;;
-
-var element = document.getElementById(&quot;canvas&quot;);
-
-element.addEventListener(&quot;mousedown&quot;, mousedown, false);
-
-
-function mousedown(evt)
-{
- 	evt.preventDefault();
-
-	mousedownCallback();
-
-	if(state == &quot;enabled&quot;) {
-		element.viewBox.baseVal.y = 30;
-
-		document.addEventListener(&quot;mousemove&quot;, mousemove, true);
-		document.addEventListener(&quot;mouseup&quot;, mouseup, true);
-	}
-}
-
-function mouseup(evt)
-{
-	evt.preventDefault();
-
-	mouseupCallback();
-
-	element.viewBox.baseVal.y = 0;
-
-	document.removeEventListener(&quot;mousemove&quot;, mousemove, true);
-	document.removeEventListener(&quot;mouseup&quot;, mouseup, true);
-}
-	
-function mousemove(evt)
-{
-	evt.preventDefault();
-
-	mousemoveCallback();
-}
-
-function setText(text)
-{
-	document.getElementById(&quot;active_text&quot;).textContent = text;
-	document.getElementById(&quot;press_text&quot;).textContent = text;
-	document.getElementById(&quot;disabled_text&quot;).textContent = text;
-}
-
-function getText()
-{
-	return document.getElementById(&quot;active_text&quot;).textContent;
-}
-
-function disable()
-{
-	state = &quot;disabled&quot;;
-
-	element.viewBox.baseVal.y = 60;
-}
-
-function enable()
-{
-	state = &quot;enabled&quot;;
-
-	element.viewBox.baseVal.y = 0;
-}
-
-function mousedownCallback() {}
-
-function mouseupCallback() {}
-
-function mousemoveCallback() {}
-
-</script>
 </svg>

@@ -5,29 +5,33 @@ USVG
 Scalable UI Components made using Scalable Vector Graphics (SVG). 
 
 
-Basic Key Components:
-	-Button
-	-Dial
-	-Slider
-	-RadioButton 
-	-CheckBox
-	-TextField 
-	-TextArea 
-	-Label
-	-ProgressBar
-	-DropDownList
- 	-NumericTextBox
-	-ComboBox
-	-ColorPicker
+Basic Components:
+<ul>
+	<li>Button</li>
+	<li>Dial</li>
+	<li>Slider</li>
+	<li>RadioButton</li>
+	<li>CheckBox</li>
+	<li>TextField</li>
+	<li>TextArea</li>
+	<li>Label</li>
+	<li>ProgressBar</li>
+	<li>DropDownList</li>
+ 	<li>NumericTextBox</li>
+	<li>ComboBox</li>
+	<li>ColorPicker</li>
+</ul>
 
-Future Advanced Components:
-    	-Calendar
-  	-DatePicker
-	-DateTimePicker
-   	-Editor
-    	-Menu
-    	-MultiSelect
-	-PanelBar
-    	-TabStrip
-    	-TimePicker
-    	-Window
+Advanced Components (Future):
+<ul>
+    	<li>Calendar</li>
+  	<li>DatePicker</li>
+	<li>DateTimePicker</li>
+   	<li>Editor</li>
+    	<li>Menu</li>
+    	<li>MultiSelect</li>
+	<li>PanelBar</li>
+    	<li>TabStrip</li>
+    	<li>TimePicker</li>
+    	<li>Window</li>
+</ul>

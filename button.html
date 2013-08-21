@@ -8,12 +8,21 @@
 <body>
 	<object id="button" name="button" data="button.svg" type="image/svg+xml"></object>
 
+	<object id="button2" name="button2" data="button.svg" type="image/svg+xml"></object>
+
 	<script>
 		window.onload = function() {
 			button.setText("Disable me!");
 
+			button2.setText("Press me!");
+
+
 			button.mousedownCallback = function() {
 				button.disable();	
+			}
+
+			button2.mousedownCallback = function() {
+				button2.setText("Pressed!");	
 			}
 		};
 	</script>

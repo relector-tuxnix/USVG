@@ -1,4 +1,3 @@
-var state;
 var element;
 
 function init()
@@ -67,9 +66,3 @@ function enable()
 
 	element.viewBox.baseVal.y = 0;
 }
-
-function mousedownCallback() {}
-
-function mouseupCallback() {}
-
-function mousemoveCallback() {}

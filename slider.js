@@ -1,56 +1,63 @@
 var pos;
-var element;
+var gutter;
+var gutterRect;
+var handle;
+var handleRect;
 
 function init()
 {
-	element = document.getElementById("slider");
+	gutter = document.getElementById("slider_gutter");
+	gutterRect = gutter.getBoundingClientRect();
 
-	element.addEventListener("mousedown", leftmousedown, false);
+	handle = document.getElementById("slider_handle");
+	handleRect = handle.getBoundingClientRect();
+
+	handle.addEventListener("mousedown", mousedown, false);
 }
 
-function leftmousedown(evt)
+function mousedown(evt)
 {
 	evt.preventDefault();
 	
-	pos = element.y2.baseVal.value - evt.clientY;
+	pos = handle.y.baseVal.value - evt.clientY;
 	
-	document.addEventListener("mousemove", leftmousemove, true);
-	document.addEventListener("mouseup", leftmouseup, true);
+	document.addEventListener("mousemove", mousemove, true);
+	document.addEventListener("mouseup", mouseup, true);
 }
 
-function leftmouseup(evt)
+function mouseup(evt)
 {
 	evt.preventDefault();
 
-	document.removeEventListener("mousemove", leftmousemove, true);
-	document.removeEventListener("mouseup", leftmouseup, true);
+	document.removeEventListener("mousemove", mousemove, true);
+	document.removeEventListener("mouseup", mouseup, true);
 }
 	
-function leftmousemove(evt)
+function mousemove(evt)
 {
 	evt.preventDefault();
 
 	var val = evt.clientY + pos;
 	
-	changeVal(-val);
+	changeVal(val);
 }
 
 function changeVal(value)
 {
-	value = -value;
-	
-	var sr = element.ownerSVGElement.suspendRedraw(1000);
+	var sr = handle.ownerSVGElement.suspendRedraw(1000);
 
-	var maxY = document.getElementById('slider_s').y2.baseVal.value;
-	var minY = document.getElementById('slider_s').y1.baseVal.value - 1;
+	var maxY = gutterRect.height - handleRect.height; 
+	var minY = 0.5;
 
-	if (value <= maxY) { 
+	if(value > maxY) { 
 		value = maxY; 
-	} else if (value >= minY) { 
+	} else if (value < minY) { 
 		value = minY; 
 	}
 
-	element.y2.baseVal.value = value;
-	
-	element.ownerSVGElement.unsuspendRedraw(sr);
+	handle.y.baseVal.value = value;	
+
+	//console.log(Math.ceil(((value - 0.5) / maxY) * 100));
+
+	handle.ownerSVGElement.unsuspendRedraw(sr);
 }

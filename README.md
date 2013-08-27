@@ -8,6 +8,8 @@ Scalable UI Components made using Scalable Vector Graphics (SVG).
 Basic Components:
 <ul>
 	<li>Button</li>
+	<li>Button Group</li>
+	<li>Switch</li>
 	<li>Dial</li>
 	<li>Slider</li>
 	<li>RadioButton</li>
@@ -24,6 +26,7 @@ Basic Components:
 
 Advanced Components (Future):
 <ul>
+	<li>Scroll View</li>
     	<li>Calendar</li>
   	<li>DatePicker</li>
 	<li>DateTimePicker</li>

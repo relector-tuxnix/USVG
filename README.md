@@ -38,3 +38,5 @@ Advanced Components (Future):
     	<li>TimePicker</li>
     	<li>Window</li>
 </ul>
+
+![Design](https://raw.github.com/neonnds/USVG/master/web_ui_preview.png)

@@ -40,4 +40,4 @@ Advanced Components (Future):
 </ul>
 
 ![Design](https://raw.github.com/neonnds/USVG/master/web_ui_preview.png)
-<i>https://github.com/ajashton/Inkscape-Mockup-Toolkit</i>
+<a href="https://github.com/ajashton/Inkscape-Mockup-Toolkit"><i>MockupToolkit</i></a>

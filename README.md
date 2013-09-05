@@ -2,7 +2,7 @@ USVG
 ====
 
 
-Scalable UI Components made using Scalable Vector Graphics (SVG) and JavaScript. 
+Scalable UI Components made using Scalable Vector Graphics (SVG) and embedded JavaScript. 
 
 
 Basic Components:

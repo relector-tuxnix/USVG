@@ -8,7 +8,7 @@ Scalable UI Components made using Scalable Vector Graphics (SVG) and embedded Ja
 ![Design](https://raw.github.com/neonnds/USVG/master/web_ui_preview.png)
 
 
-Basic Components:
+<b>Basic Components:</b>
 <ul>
 	<li>Button</li>
 	<li>Button Group</li>
@@ -27,7 +27,7 @@ Basic Components:
 	<li>ColorPicker</li>
 </ul>
 
-Advanced Components (Future):
+<b>Advanced Components (Future):</b>
 <ul>
 	<li>Scroll View</li>
     	<li>Calendar</li>
@@ -42,7 +42,7 @@ Advanced Components (Future):
     	<li>Window</li>
 </ul>
 
-Related Projects:
+<b>Related Projects:</b>
 <ul>
 	<li><a href="http://www.dotuscomus.com/pergola/examples.html">Pergola</a></li>
 	<li><a href="http://engelfrost.github.io/svg-input-elements/">svg-input-elements</a></li>

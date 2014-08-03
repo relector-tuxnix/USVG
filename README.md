@@ -51,3 +51,56 @@ Related Projects:
 	<li><a href="https://github.com/ajashton/Inkscape-Mockup-Toolkit">MockupToolkit</a>	
 </ul>
 
+
+The table below shows the behavior of the interface and its contents in the major browsers on high end configurations, and refers to what is concretely visible and working.
+
+<table border="1" cellpadding="4" cellspacing="0">
+	<tr>
+		<th></th>
+		<th>Graphics rendering</th>
+		<th>Text rendering</th>
+		<th>Homogeneity</th>
+		<th>Speed</th>
+		<th>Usability</th>
+	</tr>
+	<tr>
+		<td>Safari</td>
+		<td>Excellent</td>
+		<td>Very Good</td>
+		<td>Good</td>
+		<td>Fast</td>
+		<td>Excellent</td>
+	</tr>
+	<tr>
+		<td>Opera</td>
+		<td>Very Good</td>
+		<td>Very Good</td>
+		<td>Very Good</td>
+		<td>Fast</td>
+		<td>Good</td>
+	</tr>
+	<tr>
+		<td>Firefox</td>
+		<td>Very Good</td>
+		<td>Very Good</td>
+		<td>Good</td>
+		<td>Fast</td>
+		<td>Very Good</td>
+	</tr>
+	<tr>
+		<td>IE + ASV</td>
+		<td>Good</td>
+		<td>Average</td>
+		<td>Very Good</td>
+		<td>Very Fast</td>
+		<td>Very Good</td>
+	</tr>
+	<tr>
+		<td>Google Chrome</td>
+		<td>Good</td>
+		<td>Very Good</td>
+		<td>Good</td>
+		<td>Very Fast</td>
+		<td>Excellent</td>
+	</tr>
+</table>

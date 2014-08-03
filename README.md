@@ -54,7 +54,7 @@ Related Projects:
 
 The table below shows the behavior of the interface and its contents in the major browsers on high end configurations, and refers to what is concretely visible and working.
 
-<table border="1" cellpadding="2" cellspacing="0">
+<table border="0" cellpadding="2" cellspacing="0">
 	<tr>
 		<th></th>
 		<th>Graphics rendering</th>

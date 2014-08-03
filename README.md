@@ -40,8 +40,12 @@ Advanced Components (Future):
 </ul>
 
 Related Projects:
-![Pergola](http://www.dotuscomus.com/pergola/examples.html)
+<ul>
+	<li>http://www.dotuscomus.com/pergola/examples.html</li>
+	
+</ul>
+
 
 ![Design](https://raw.github.com/neonnds/USVG/master/web_ui_preview.png)
 
-See: <a href="https://github.com/ajashton/Inkscape-Mockup-Toolkit"><i>MockupToolkit</i></a>
+See: 

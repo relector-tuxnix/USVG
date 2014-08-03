@@ -44,7 +44,10 @@ Advanced Components (Future):
 
 Related Projects:
 <ul>
-	<li><a href ="http://www.dotuscomus.com/pergola/examples.html">Pergola</a></li>
+	<li><a href="http://www.dotuscomus.com/pergola/examples.html">Pergola</a></li>
+	<li><a href="http://engelfrost.github.io/svg-input-elements/">svg-input-elements</a></li>
+	<li><a href="http://osku.de/svg/gui-examples/">osku.de gui widgets</a></li>
+	<li><a href="http://www.dotuscomus.com/svg/lib/library.html">Dotuscomus</a></li>
 	<li><a href="https://github.com/ajashton/Inkscape-Mockup-Toolkit">MockupToolkit</a>	
 </ul>
 

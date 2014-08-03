@@ -51,7 +51,7 @@ Related Projects:
 	<li><a href="https://github.com/ajashton/Inkscape-Mockup-Toolkit">MockupToolkit</a>	
 </ul>
 
-
+<!--
 The table below shows the behavior of the interface and its contents in the major browsers on high end configurations, and refers to what is concretely visible and working.
 
 <table border="0" cellpadding="2" cellspacing="0">
@@ -104,3 +104,4 @@ The table below shows the behavior of the interface and its contents in the majo
 		<td>Excellent</td>
 	</tr>
 </table>
+-->
